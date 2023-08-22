@@ -11,7 +11,7 @@ def get_tv(name, statement):
     driver = webdriver.Chrome()
     
     # financials-income-statement
-    URL = f'https://www.tradingview.com/symbols/{name}/{statement}/'
+    URL = f'https://www.tradingview.com/symbols/{name}/financials-{statement}/'
 
     driver.get(URL)
     wait = WebDriverWait(driver, timeout=10)
