@@ -1,6 +1,4 @@
-<h1>Webscrapping API for Trading View </h1>
-Made with Flask as the framework for the get and post requests and Beautiful Soup and Requests libraries for scrapping the data.
-<hr>
+<h1>Webscrapping API for Trading View & API for EDGAR sec.gov financial database </h1>
 
 **Content**
 - Assets,Current_Assets,Cash,Accounts_Receivable,Inventory,Fixed_Assets,Total_Liabilities,Current_Liabilities,Long_Term_Debt,Equity from *balance sheets*,
@@ -12,9 +10,18 @@ Made with Flask as the framework for the get and post requests and Beautiful Sou
 **Updates**
 
 *v1* data from Trading View web app
+/tv/?name=<NAME>&statement=<STATEMENT>
+- NAME - name of the company on Trading View
+- STATEMENT - income-statement, balance-sheet, cash-flow
 
 *v2* data from SEC EDGAR database
-
+/edgar/?CIR=<CIR>&name=<NAME>&start=<START>&end=<END>&form=<FORM>&metrics=<METRICS>
+- CIR - Central Index Key of the corporation
+- NAME - name of the corporation*
+- START - year from which data will be collected
+- END - year up to which data will be collected
+- FORM - filling type (10-K/10-Q)
+- METRICS - array of metric that are to be collected
 
     EDGAR API:
 
