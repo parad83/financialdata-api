@@ -2,14 +2,14 @@
 
 <h3>Verions</h3>
 
-<h5>v1 data from Trading View web app</h5>
+<h5>v1: data from Trading View web app</h5>
 
     /tv/?name=<NAME>&statement=<STATEMENT>
     
 - NAME - name of the company on Trading View
 - STATEMENT - income-statement, balance-sheet, cash-flow
 
-<h5>v2 data from SEC EDGAR database</h5>
+<h5>v2: data from SEC EDGAR database</h5>
 
     /edgar/?CIR=<CIR>&name=<NAME>&start=<START>&end=<END>&form=<FORM>&metrics=<METRICS>
     
